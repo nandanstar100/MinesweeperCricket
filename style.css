@@ -1,0 +1,129 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+#title{
+  font-family: Arial, Helvetica, sans-serif;
+  color: brown;
+  font-size: 35px;
+}
+  #table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #field {
+    width: 480px;
+    height: 480px;
+    border: 2px solid black;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 2px;
+  }
+
+  #scorecard {
+    width:400px;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #6abee5;
+  }
+  
+  #scorecard p {
+    margin: 10px;
+    font-size: 24px;
+  }
+  
+  #scorecard-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #gamestart {
+    margin-top: 10px;
+    border: 1px solid #101010;
+    padding: 20px;
+    display: inline-block;
+    background-color: red;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  #scoreballwicket{
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    background-color: rgb(54, 229, 95);
+  }
+body {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-image: url('background.jpeg');
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+#gridSize {
+  margin-left: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+table {
+    width: 480px;
+    height: 480px;
+    margin: 40px auto 0;
+    background-image: url('crickethome.jpeg');
+    background-size: cover;
+
+}
+td {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+  
+  select {
+    padding: 2px;
+    font-size: 25px;
+    color: white;
+    background-color: #007bff;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+  }
+  
+  button {
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  #rules{
+    border: 5px solid #ccc;
+    color:black;
+    background-color: red;
+    margin-top: 0px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .scoreboard{
+    display: inline-block;
+    width: 20%;
+    
+  }

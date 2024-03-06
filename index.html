@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minesweeper Cricket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body">
+        <h1 id="title">Minesweeper Cricket</h1>
+        <p id="targetdisplay" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:40px;display: none;">Target:<span id="target" >0</span></p>
+        <!--displays target after game starts-->
+ 
+  <div id="container"> <table id="field"><!--container contains the table and scorecard side by side while playing game--></table>
+    <img src="youwon.jpeg" id="image" style="display: none;width: 400px;height: 400px;">
+    <div id="scorecard" style="display: none;">
+        <h1><u>Scorecard</u></h1>
+      <div style="display:flex;"><p id="player0">player0🏏:0</p>
+        <p id="playerball0" style="font-size: 28px;">balls:0</p>
+        <p id="playerSR0">SR:0</p></div>
+    </div></div>
+
+<p id="rules">In this game you have to select number of wickets and dificulty level.<br> After starting of the game you have to select random boxes and the score inside it will be awarded.<br>There are randomly 11 fielders in the grid and if you select it then you are out. Chase the target before all your wickets are gone.</p>
+<div id="gamestart">
+    <label style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:40px;">players</label>
+    <select id="wickets">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <!--can select how many wicket match you can play-->
+    </select>
+    <label style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:40px;">Difficulty</label>
+    <select id="gridSize">
+      <option value="9">easy</option>
+      <option value="8">medium</option>
+      <option value="7">hard</option>
+      <option value="6">asian</option>
+      <!--can select grid size based on difficulty.more is the difficulty less is the gridsize-->
+    </select>
+    <button onclick="startGame()">Start Game</button>
+</div>
+<div id="scoreballwicket" style="display: none;">
+  <!--displays total team score,wickets,runrate,overs,sixes-->
+    <div id="score" style="font-size:30px;text-align:right" class="scoreboard">Score: 0</div>
+<div id="overs" style="font-size:30px;" class="scoreboard">Overs: 0.0</div>
+<div id="RR" style="font-size:30px;" class="scoreboard">RunRate: 0</div>
+<div id="wicketstaken" style="font-size:30px;" class="scoreboard">wickets:0</div>
+    <div id="sixmeter" style="font-size:30px;" class="scoreboard">Six-O-Meter:0</div>
+  <div id="lost" style="display: none;font-size:30px;" >
+      </div> 
+    </div>
+
+
+  <script src="script.js">  </script>
+</body>
+</html>
